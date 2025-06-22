@@ -13,6 +13,19 @@ body,html{
    background: -webkit-linear-gradient(to right, rgb(40, 59, 34), rgb(54, 60, 70), rgb(32, 32, 43));
 	background: linear-gradient(to right, rgb(38, 51, 61), rgb(50, 55, 65), rgb(33, 33, 78));
 }
+.card-header.msg_head {
+  background-color: #007bff;
+  color: white;
+}
+.btn-outline-light {
+  color: white;
+  border-color: white;
+}
+.btn-outline-light:hover {
+  background-color: white;
+  color: #007bff;
+}
+
 
 .chat{
 	margin-top: auto;

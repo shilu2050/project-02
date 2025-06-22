@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chat History</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body class="bg-dark text-white">
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Your Chat History</h2>
+
+    {% if history %}
+      <div class="list-group">
+        {% for entry in history %}
+          <div class="list-group-item bg-secondary text-white mb-2">
+            <small class="text-muted">{{ entry.timestamp }}</small>
+            <p><strong>You:</strong> {{ entry.question }}</p>
+            <p><strong>Bot:</strong> {{ entry.answer }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="text-center">No chat history available.</p>
+    {% endif %}
+
+    <div class="text-center mt-4">
+      <a href="/chat" class="btn btn-success">Back to Chatbot</a>
+      <a href="/dashboard" class="btn btn-light ml-2">Back to Dashboard</a>
+    </div>
+  </div>
+</body>
+</html>
