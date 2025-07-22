@@ -9,3 +9,35 @@ langchain_community
 langchain_openai
 langchain_experimental
 -e .
+
+flask
+flask-mail
+python-dotenv
+sqlite3  # Note: this is part of Python stdlib, no need to install separately
+
+# Security
+itsdangerous
+werkzeug
+
+# LangChain and integrations
+langchain
+langchain-community
+langchain-pinecone
+langchain-huggingface
+langchain-openai
+langchain-experimental
+
+# PDF reading
+pypdf
+
+# Vector database
+pinecone-client[grpc]
+
+# Embedding model
+sentence-transformers==2.2.2  # You mentioned this version explicitly
+
+# OpenAI / OpenRouter client
+openai
+
+# Development mode (editable install of your own package/module)
+-e .

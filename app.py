@@ -9,9 +9,6 @@ from src.helper import download_hugging_face_embeddings
 from langchain_pinecone import PineconeVectorStore
 from openai import OpenAI
 from itsdangerous import URLSafeTimedSerializer
-# Secret key should already be set for Flask
-
-
 
 # Initialize app and env
 app = Flask(__name__)
