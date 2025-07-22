@@ -13,7 +13,7 @@ langchain_experimental
 flask
 flask-mail
 python-dotenv
-sqlite3  # Note: this is part of Python stdlib, no need to install separately
+sqlite3  
 
 # Security
 itsdangerous
@@ -34,10 +34,10 @@ pypdf
 pinecone-client[grpc]
 
 # Embedding model
-sentence-transformers==2.2.2  # You mentioned this version explicitly
+sentence-transformers==2.2.2  
 
 # OpenAI / OpenRouter client
 openai
 
-# Development mode (editable install of your own package/module)
+ 
 -e .
